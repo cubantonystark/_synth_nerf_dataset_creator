@@ -15,6 +15,6 @@ run python data_handler.py.<br>
 At the end of processing, you should now have an NSVF formatted dataset to train onto the implementation.<br>
 The tool works for both JPEG and PNG file formats.
 
-# Acknowlegments
+# Acknowledgments
 [AI葵, kwea123](https://github.com/kwea123) for his amazing work in the instant NeRF field.<br>
 [NVIDIA Research Projects](https://github.com/NVlabs) for their breakthroughs in this field.
