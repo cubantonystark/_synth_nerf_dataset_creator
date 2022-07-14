@@ -43,7 +43,7 @@ https://user-images.githubusercontent.com/6027881/178971425-6d593d58-52ae-46c7-b
 ### Changelog
 
 - Standarized image output and size.
-- Added Randomization to test and validation image sets.
+- Added Randomization to test and validation sets.
 - Removed redundant code.
 
 ### To Do
