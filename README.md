@@ -18,3 +18,4 @@ The tool works for both JPEG and PNG file formats.<br>
 # Acknowledgments
 [AI葵, kwea123](https://github.com/kwea123) for his amazing work in the instant NeRF field.<br>
 [NVIDIA Research Projects](https://github.com/NVlabs) for their breakthroughs in this field.
+[Meta -Formerly Facebook- Research](https://github.com/facebookresearch)
