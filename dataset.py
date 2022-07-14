@@ -92,7 +92,7 @@ class data_handler():
             
         filename_count = 0
         random.seed(0)
-        shuffled_filenames = list(range(filename_count, end_1))
+        shuffled_filenames = list(range(filename_count, end_1-1))
         random.shuffle(shuffled_filenames)
 
         for item in files_1:
@@ -104,7 +104,7 @@ class data_handler():
             
         filename_count = 0
         random.seed(0)
-        shuffled_filenames = list(range(filename_count, end_1))
+        shuffled_filenames = list(range(filename_count, end_1-1))
         random.shuffle(shuffled_filenames)
         
         for item in files_0:
