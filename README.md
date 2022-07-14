@@ -37,7 +37,7 @@ x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max =
 
 ### The video below shows the tool in action
 
-https://user-images.githubusercontent.com/6027881/178885918-31c0eb2b-beb9-401c-ad6f-58830835de33.mp4
+https://user-images.githubusercontent.com/6027881/178971425-6d593d58-52ae-46c7-bfd1-57e4ba4c2344.mp4
 
 ### Acknowledgments
 [AI葵, kwea123](https://github.com/kwea123) for the amazing work in the instant NeRF field.<br>
