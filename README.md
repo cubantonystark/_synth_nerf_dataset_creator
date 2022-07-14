@@ -42,6 +42,6 @@ https://user-images.githubusercontent.com/6027881/178885918-31c0eb2b-beb9-401c-a
 
 
 ## Acknowledgments
-[AI葵, kwea123](https://github.com/kwea123) for his amazing work in the instant NeRF field.<br>
+[AI葵, kwea123](https://github.com/kwea123) for the amazing work in the instant NeRF field.<br>
 [NVIDIA Research Projects](https://github.com/NVlabs) for their breakthroughs in this field.<br>
 [Meta -Formerly Facebook- Research](https://github.com/facebookresearch)
