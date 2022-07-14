@@ -9,6 +9,22 @@ I just put together this dataset creation tool to leverage the power of [AI葵
 kwea123's](https://github.com/kwea123) amazing pure [pytorch+cuda trained with pytorch-lightning implementation](https://github.com/kwea123/ngp_pl).<br>
 This tool uses the colmap2nerf script from [NVIDIA's Instant NeRF implementation](https://github.com/NVlabs/instant-ngp) and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).
 
+## dataset structure
+<br>
+<dataset_name>
+|-- bbox.txt         # bounding-box file
+|-- intrinsics.txt   # 4x4 camera intrinsics
+|-- rgb
+    |-- 0.png        # target image for each view
+    |-- 1.png
+    ...
+|-- pose
+    |-- 0.txt        # camera pose for each view (4x4 matrices)
+    |-- 1.txt
+    ...
+[optional]
+|-- test_traj.txt    # camera pose for free-view rendering demonstration (4N x 4)
+<br>
 # Usage
 Have [colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
 Create an images folder and add the photos you want for the dataset.<br>
