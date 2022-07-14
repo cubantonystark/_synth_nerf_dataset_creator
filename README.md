@@ -1,12 +1,12 @@
 # Synthetic NeRF Dataset creation tool
-(preliminary writeup) I will add more as time allows.
+(Preliminary writeup) I will add more as time allows.
 
-Feel free to use and enhance. i wrote this in a couple hours and some of the code might not be pythonic enough. You are more than welcome to contribute to this effort.<br>
+Feel free to use and enhance. I wrote this in a couple hours and some of the code might not be pythonic enough. You are more than welcome to contribute to this effort.<br>
 <br>
 I will add compatibility results shortly.<br>
 
 I just put together this dataset creation tool to leverage the power of [AI葵
-kwea123's](https://github.com/kwea123) [amazing pure pytorch+cuda trained with pytorch-lightning implementation](https://github.com/kwea123/ngp_pl). This tool uses the colmap2nerf script from [NVIDIA's Instant NeRF implementation](https://github.com/NVlabs/instant-ngp)
+kwea123's](https://github.com/kwea123) amazing pure [pytorch+cuda trained with pytorch-lightning implementation](https://github.com/kwea123/ngp_pl). This tool uses the colmap2nerf script from [NVIDIA's Instant NeRF implementation](https://github.com/NVlabs/instant-ngp) and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets] (https://github.com/facebookresearch/NSVF#dataset).
 
 # Usage
 Have colmap installed in your system and added to your system PATH.<br>
