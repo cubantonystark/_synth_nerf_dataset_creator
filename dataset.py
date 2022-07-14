@@ -110,7 +110,7 @@ class data_handler():
         for item in files_0:
 
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
-            os.rename("images_test/"+os.path.basename(item), "images_test/0_"+"%04d" % (shuffled_filenames)+".png")
+            os.rename("images_test/"+os.path.basename(item), "images_test/0_"+"%04d" % (shuffled_filenames[0])+".png")
             shuffled_filenames.pop(0)
             filename_count += 1 
             
