@@ -52,7 +52,7 @@ class data_handler():
         Run resizer regardless
         '''
         
-        for file in files:
+        for file in tqdm(files, desc = "Resizing"):
             
             image = Image.open(file)
             new_image = image.resize((800, 800))
@@ -125,7 +125,7 @@ class data_handler():
         Start Data Processing
         '''
         
-        spinner = Halo(text='Creating dataset.', spinner='dots')
+        spinner = Halo(text='Running COLMAP.', spinner='dots')
         spinner.start()
         command = 'python colmap2nerf.py --colmap_matcher exhaustive --run_colmap --aabb_scale 16 > log.txt'
         os.system(command)
