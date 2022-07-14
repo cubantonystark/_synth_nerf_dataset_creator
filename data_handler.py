@@ -1,6 +1,7 @@
 from tqdm import tqdm
 from halo import Halo
-from PIL import Image
+from PIL import Image, ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 import json, os, time, shutil, glob, random, sys, cv2
 
 class data_handler():
@@ -50,7 +51,7 @@ class data_handler():
         Run resizer regardless
         '''
         
-        for file in files:
+        for file in tqdm(files, desc = "Resizing."):
             
             image = Image.open(file)
             new_image = image.resize((800, 800))
