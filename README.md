@@ -1,5 +1,5 @@
 # Synthetic NeRF Dataset creation tool
-(Preliminary writeup) I will add more as time allows.
+(Preliminary writeup) - I will add more as time allows.
 
 Feel free to use and enhance. I wrote this in a couple hours and some of the code might not be pythonic enough. You are more than welcome to contribute to this effort.<br>
 <br>
