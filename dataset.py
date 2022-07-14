@@ -20,6 +20,7 @@ class data_handler():
         elif (extension == "jpg") or (extension == "JPG"):
             
             print("Image type: 'JPG' (Joint Photographic Experts Group).\r")
+            print("Running Conversion.\r")
             self.do_jpg(files)  
             
         else:
@@ -51,7 +52,7 @@ class data_handler():
         Run resizer regardless
         '''
         
-        for file in tqdm(files, desc = "Resizing."):
+        for file in tqdm(files, desc = "Resizing"):
             
             image = Image.open(file)
             new_image = image.resize((800, 800))
@@ -216,3 +217,5 @@ class data_handler():
 if __name__ == "__main__":
     
     data_handler().main()
+        
+        
