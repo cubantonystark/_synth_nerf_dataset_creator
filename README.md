@@ -11,9 +11,9 @@ kwea123's](https://github.com/kwea123) amazing pure [pytorch+cuda trained with p
 # Usage
 Have [colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
 create an images folder and add the photos you want for the dataset.<br>
-run python data_handler.py.<br>
+Run python data_handler.py.<br>
 At the end of processing, you should now have an NSVF formatted dataset to train onto the implementation.<br>
-The tool works for both JPEG and PNG file formats.
+The tool works for both JPEG and PNG file formats.<br>
 
 # Acknowledgments
 [AI葵, kwea123](https://github.com/kwea123) for his amazing work in the instant NeRF field.<br>
