@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/6027881/178971425-6d593d58-52ae-46c7-b
 - Added randomization to test and validation sets.
 - Removed redundant code.
 
-### To Do
+### :hammer: To Do
 
 - Create GUI
 - Add funtionality to prepare datasets for colorless and colorized mesh extraction
