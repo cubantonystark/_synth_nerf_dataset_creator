@@ -28,7 +28,7 @@ x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max =
 <br>
 ### Required libraries
 tqdm, halo, Pillow, json, opencv-python, argparse, pathlib, numpy
-### Usage
+### :computer: Usage
 - Have [Colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
 - Create an images folder and add the photos you want for the dataset.<br>
 - Run ``python dataset.py``<br>
