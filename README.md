@@ -26,6 +26,10 @@ x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max =
  I hardcoded those values by referencing [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp)'s rendering GUI. You are more than welcome to change them to fit your needs.<br><br>
  The datasets are split with view indices. For example, "``train (0..100)``, ``valid (100..200)`` and ``test (200..400)``" mean the first 100 views for training, 100-199th views for validation, and 200-399th views for testing.
 <br>
+### Required libraries
+
+tqdm, halo, Pillow, jaosn, opencv-python, argparse, pathlib, numpy
+
 ### Usage
 - Have [Colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
 - Create an images folder and add the photos you want for the dataset.<br>
