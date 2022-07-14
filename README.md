@@ -29,7 +29,7 @@ where the ``bbox.txt`` file contains a line describing the initial bounding box 
 ```bash
 x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max = 8.500 initial_voxel_size - 0.4
 ```
-I hardcoded those values by referencing Instant NGP's implementation rendering GUI. You are more than welcome to change them to fit your needs.<br>
+I hardcoded those values by referencing [Instant NGP]'s(https://github.com/NVlabs/instant-ngp) rendering GUI. You are more than welcome to change them to fit your needs.<br>
 The datasets are split with view indices. For example, "``train (0..100)``, ``valid (100..200)`` and ``test (200..400)``" mean the first 100 views for training, 100-199th views for validation, and 200-399th views for testing.
 <br>
 # Usage
