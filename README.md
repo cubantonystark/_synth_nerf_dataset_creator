@@ -18,7 +18,7 @@
     ...
 ```
 
-where the ``bbox.txt`` file contains a line describing the initial bounding box and voxel size:
+The resulting ``bbox.txt`` file contains a line describing the initial bounding box and voxel size:
 
 ```bash
 x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max = 8.500 initial_voxel_size = 0.4
