@@ -40,7 +40,7 @@ tqdm, halo, Pillow, json, opencv-python, argparse, pathlib, numpy
 https://user-images.githubusercontent.com/6027881/178971425-6d593d58-52ae-46c7-bfd1-57e4ba4c2344.mp4
 
 
-### Changelog
+### :grey_exclamation: Changelog
 
 - Standarized image output and size.
 - Added randomization to test and validation sets.
