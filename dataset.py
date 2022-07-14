@@ -83,40 +83,45 @@ class data_handler():
         files_0 = files[start_0:end_0]
         
         filename_count = 0
-        
+       
         for item in files_2:
             
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
             os.rename("images_test/"+os.path.basename(item), "images_test/2_"+"%04d" % (filename_count)+".png")
             filename_count += 1   
-            
+        
+        '''
+        Create test image set
+        
+        '''    
+        
         filename_count = 0
         random.seed(0)
-        shuffled_filenames = list(range(filename_count, end_1-1))
-        random.shuffle(shuffled_filenames)
-
+        
+        random.shuffle(files_1)
+        
         for item in files_1:
             
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
-            os.rename("images_test/"+os.path.basename(item), "images_test/1_"+"%04d" % (shuffled_filenames[0])+".png")
-            shuffled_filenames.pop(0)
-            filename_count += 1   
+            os.rename("images_test/"+os.path.basename(item), "images_test/1_"+"%04d" % (filename_count)+".png")
+            filename_count += 1               
             
         filename_count = 0
         random.seed(0)
-        shuffled_filenames = list(range(filename_count, end_1-1))
-        random.shuffle(shuffled_filenames)
+        
+        random.shuffle(files_0)
         
         for item in files_0:
-
-            shutil.copyfile(item, "images_test/"+os.path.basename(item))
-            os.rename("images_test/"+os.path.basename(item), "images_test/0_"+"%04d" % (shuffled_filenames[0])+".png")
-            shuffled_filenames.pop(0)
-            filename_count += 1 
             
+            shutil.copyfile(item, "images_test/"+os.path.basename(item))
+            os.rename("images_test/"+os.path.basename(item), "images_test/0_"+"%04d" % (filename_count)+".png")
+            filename_count += 1 
+    
         shutil.rmtree("images")
         
         os.rename ("images_test", "images")
+        
+        quit()
         
         '''
         Start Data Processing
