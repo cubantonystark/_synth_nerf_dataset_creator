@@ -35,7 +35,7 @@ tqdm, halo, Pillow, json, opencv-python, argparse, pathlib, numpy
 - The tool will convert .JPG files to .PNG format and also resize to a standard 800 x 800. This is done for ease of use and avoid potential errors when training.<br>
 - At the end of processing, you should now have an [NSVF style](https://github.com/facebookresearch/NSVF) formatted dataset to train with [NGP_PL](https://github.com/kwea123/ngp_pl).<br>
 
-### The video below shows the tool in action
+### :tv: The video below shows the tool in action
 
 https://user-images.githubusercontent.com/6027881/178971425-6d593d58-52ae-46c7-bfd1-57e4ba4c2344.mp4
 
