@@ -7,7 +7,7 @@ I will add compatibility results shortly.<br>
 
 I just put together this dataset creation tool to leverage the power of [AI葵
 kwea123's](https://github.com/kwea123) amazing pure [pytorch+cuda trained with pytorch-lightning implementation](https://github.com/kwea123/ngp_pl).<br>
-This tool uses the colmap2nerf script from [NVIDIA's Instant NeRF implementation](https://github.com/NVlabs/instant-ngp) and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).
+This tool uses the colmap2nerf script from [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp) implementation and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).
 
 ## Dataset structure<br>
 ```bash
@@ -29,14 +29,14 @@ where the ``bbox.txt`` file contains a line describing the initial bounding box 
 ```bash
 x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max = 8.500 initial_voxel_size - 0.4
 ```
-I hardcoded those values by referencing [Instant NGP]'s(https://github.com/NVlabs/instant-ngp) rendering GUI. You are more than welcome to change them to fit your needs.<br>
+I hardcoded those values by referencing [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp)'s rendering GUI. You are more than welcome to change them to fit your needs.<br>
 The datasets are split with view indices. For example, "``train (0..100)``, ``valid (100..200)`` and ``test (200..400)``" mean the first 100 views for training, 100-199th views for validation, and 200-399th views for testing.
 <br>
 # Usage
-Have [colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
+Have [Colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
 Create an images folder and add the photos you want for the dataset.<br>
 Run python data_handler.py.<br>
-At the end of processing, you should now have an NSVF formatted dataset to train onto the implementation.<br>
+At the end of processing, you should now have an NSVF style formatted dataset to train onto the implementation.<br>
 The tool will convert JPG files to PNG format and also resize to a standard 800 x 800. 
 
 # Acknowledgments
