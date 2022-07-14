@@ -31,7 +31,7 @@ x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max =
 ## Usage
 - Have [Colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
 - Create an images folder and add the photos you want for the dataset.<br>
-- Run python dataset.py.<br>
+- Run ``python dataset.py``<br>
 - The tool will convert .JPG files to .PNG format and also resize to a standard 800 x 800. This is done for ease of use and potential processiung issues later.<br>
 - At the end of processing, you should now have an [NSVF](https://github.com/facebookresearch/NSVF) style formatted dataset to train onto the implementation.<br>
 
