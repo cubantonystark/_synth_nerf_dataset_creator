@@ -1,6 +1,6 @@
 # Synthetic NeRF dataset creation tool
 
- This tool was created to leverage the power of [AI葵 (kwea123)](https://github.com/kwea123)'s Lightning fast [NeRF](https://github.com/kwea123/ngp_pl) implementation. It uses the colmap2nerf script from [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp) implementation and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).<br><br>
+ This tool was created to leverage the power of [AI葵 (kwea123)](https://github.com/kwea123)'s Lightning fast [NeRF](https://github.com/kwea123/ngp_pl). It uses the colmap2nerf script from [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp) implementation and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).<br><br>
  Feel free to use and enhance. I wrote this in a few free hours and some of the code might not be pythonic enough. You are more than welcome to contribute to this effort.<br>
 
 ### Dataset structure<br>
