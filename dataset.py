@@ -20,7 +20,7 @@ class data_handler():
         elif (extension == "jpg") or (extension == "JPG"):
             
             print("Image type: 'JPG' (Joint Photographic Experts Group).\r")
-            print("Running Conversion.\r")
+            print("Processing images.\r")
             self.do_jpg(files)  
             
         else:
@@ -84,7 +84,7 @@ class data_handler():
         
         filename_count = 0
         
-        for item in tqdm(files_2, desc = "Creating Training set"):
+        for item in files_2:
             
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
             os.rename("images_test/"+os.path.basename(item), "images_test/2_"+"%04d" % (filename_count)+".png")
@@ -92,7 +92,7 @@ class data_handler():
             
         filename_count = 0
         
-        for item in tqdm(files_1, desc = "Creating Testing set"):
+        for item in files_1:
             
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
             os.rename("images_test/"+os.path.basename(item), "images_test/1_"+"%04d" % (filename_count)+".png")
@@ -100,7 +100,7 @@ class data_handler():
             
         filename_count = 0
         
-        for item in tqdm(files_0, desc = "Creting Evaluation set"):
+        for item in files_0:
             
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
             os.rename("images_test/"+os.path.basename(item), "images_test/0_"+"%04d" % (filename_count)+".png")
@@ -192,12 +192,12 @@ class data_handler():
         os.remove("log.txt")
         os.remove("colmap.db")
         
-        print("\rDone.")
+        print("\nDone.")
         sys.exit()
         
     def do_jpg(self, files):
         
-        for file in tqdm(files, desc = "Working"):
+        for file in files:
             file_to_png = file
             
             img = Image.open(file_to_png)
@@ -206,7 +206,7 @@ class data_handler():
             
         files = glob.glob("images/*.*")
         
-        for file in tqdm(files, desc = "Working"):
+        for file in files:
             
             file_to_rename = file.replace(".jpg", "")
             
