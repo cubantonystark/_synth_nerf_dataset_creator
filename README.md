@@ -5,7 +5,7 @@
  This tool uses the colmap2nerf script from [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp) implementation and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).<br>
  Feel free to use and enhance. I wrote this in a couple hours and some of the code might not be pythonic enough. You are more than welcome to contribute to this effort. I will add compatibility results shortly.<br>
 
-## Dataset structure<br>
+### Dataset structure<br>
 ```bash
 <dataset_name>
 |-- bbox.txt         # bounding-box file
@@ -28,14 +28,14 @@ x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max =
  I hardcoded those values by referencing [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp)'s rendering GUI. You are more than welcome to change them to fit your needs.<br>
  The datasets are split with view indices. For example, "``train (0..100)``, ``valid (100..200)`` and ``test (200..400)``" mean the first 100 views for training, 100-199th views for validation, and 200-399th views for testing.
 <br>
-# Usage
- Have [Colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
-Create an images folder and add the photos you want for the dataset.<br>
- Run python data_handler.py.<br>
- At the end of processing, you should now have an [NSVF](https://github.com/facebookresearch/NSVF) style formatted dataset to train onto the implementation.<br>
- The tool will convert JPG files to PNG format and also resize to a standard 800 x 800. 
+## Usage
+- Have [Colmap](https://colmap.github.io/index.html) installed in your system and added to your system PATH.<br>
+- Create an images folder and add the photos you want for the dataset.<br>
+- Run python data_handler.py.<br>
+- The tool will convert .JPG files to .PNG format and also resize to a standard 800 x 800. This is done for ease of use and potential processiung issues later.<br>
+- At the end of processing, you should now have an [NSVF](https://github.com/facebookresearch/NSVF) style formatted dataset to train onto the implementation.<br>
 
-# Acknowledgments
+## Acknowledgments
 [AI葵, kwea123](https://github.com/kwea123) for his amazing work in the instant NeRF field.<br>
 [NVIDIA Research Projects](https://github.com/NVlabs) for their breakthroughs in this field.<br>
 [Meta -Formerly Facebook- Research](https://github.com/facebookresearch)
