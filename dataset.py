@@ -91,19 +91,27 @@ class data_handler():
             filename_count += 1   
             
         filename_count = 0
-        
+        random.seed(0)
+        shuffled_filenames = list(range(filename_count, end_1))
+        random.shuffle(shuffled_filenames)
+
         for item in files_1:
             
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
-            os.rename("images_test/"+os.path.basename(item), "images_test/1_"+"%04d" % (filename_count)+".png")
-            filename_count += 1    
+            os.rename("images_test/"+os.path.basename(item), "images_test/1_"+"%04d" % (shuffled_filenames[0])+".png")
+            shuffled_filenames.pop(0)
+            filename_count += 1   
             
         filename_count = 0
+        random.seed(0)
+        shuffled_filenames = list(range(filename_count, end_1))
+        random.shuffle(shuffled_filenames)
         
         for item in files_0:
-            
+
             shutil.copyfile(item, "images_test/"+os.path.basename(item))
-            os.rename("images_test/"+os.path.basename(item), "images_test/0_"+"%04d" % (filename_count)+".png")
+            os.rename("images_test/"+os.path.basename(item), "images_test/0_"+"%04d" % (shuffled_filenames)+".png")
+            shuffled_filenames.pop(0)
             filename_count += 1 
             
         shutil.rmtree("images")
