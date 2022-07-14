@@ -1,4 +1,4 @@
-# Synthetic NeRF Dataset creation tool
+# Synthetic NeRF dataset creation tool
 Preliminary writeup - I will add more as time allows.
 
  This tool was created to leverage the power of [AI葵kwea123](https://github.com/kwea123)'s amazing NeRF implementation using [pytorch+cuda trained with pytorch-lightning](https://github.com/kwea123/ngp_pl).<br>
