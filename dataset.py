@@ -52,7 +52,7 @@ class data_handler():
         Run resizer regardless
         '''
         
-        for file in tqdm(files, desc = "Resizing"):
+        for file in files:
             
             image = Image.open(file)
             new_image = image.resize((800, 800))
@@ -120,8 +120,6 @@ class data_handler():
         shutil.rmtree("images")
         
         os.rename ("images_test", "images")
-        
-        quit()
         
         '''
         Start Data Processing
@@ -210,7 +208,7 @@ class data_handler():
         
     def do_jpg(self, files):
         
-        for file in tqdm(files, desc = "Working"):
+        for file in files:
             file_to_png = file
             
             img = Image.open(file_to_png)
