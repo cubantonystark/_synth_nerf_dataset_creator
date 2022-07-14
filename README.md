@@ -2,7 +2,7 @@
 Preliminary writeup - I will add more as time allows.
 
  This tool was created to leverage the power of [AI葵kwea123](https://github.com/kwea123)'s amazing NeRF implementation using [pytorch+cuda trained with pytorch-lightning](https://github.com/kwea123/ngp_pl).<br>
- This tool uses the colmap2nerf script from [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp) implementation and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).<br>
+ It uses the colmap2nerf script from [NVIDIA's Instant NeRF](https://github.com/NVlabs/instant-ngp) implementation and produces a Synthetic NeRF dataset formated like the ones in [Facebook Research NSVF Synthetic NeRF datasets](https://github.com/facebookresearch/NSVF#dataset).<br>
  Feel free to use and enhance. I wrote this in a couple hours and some of the code might not be pythonic enough. You are more than welcome to contribute to this effort. I will add compatibility results shortly.<br>
 
 ### Dataset structure<br>
@@ -38,8 +38,6 @@ x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max =
 ### The video below shows the tool in action
 
 https://user-images.githubusercontent.com/6027881/178885918-31c0eb2b-beb9-401c-ad6f-58830835de33.mp4
-
-
 
 ## Acknowledgments
 [AI葵, kwea123](https://github.com/kwea123) for the amazing work in the instant NeRF field.<br>
