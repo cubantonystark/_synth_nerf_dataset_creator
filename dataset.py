@@ -114,7 +114,7 @@ class data_handler():
         Start Data Processing
         '''
         
-        spinner = Halo(text='Creating dataset', spinner='dots')
+        spinner = Halo(text='Creating dataset.', spinner='dots')
         spinner.start()
         command = 'python colmap2nerf.py --colmap_matcher exhaustive --run_colmap --aabb_scale 16 > log.txt'
         os.system(command)
@@ -197,7 +197,7 @@ class data_handler():
         
     def do_jpg(self, files):
         
-        for file in files:
+        for file in tqdm(files, desc = "Working"):
             file_to_png = file
             
             img = Image.open(file_to_png)
