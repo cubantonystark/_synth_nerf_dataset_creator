@@ -35,7 +35,11 @@ x_min = -7.500 y_min = -7.500 z_min = -7.500 x_max = 8.500 y_max = 8.500 z_max =
 - The tool will convert .JPG files to .PNG format and also resize to a standard 800 x 800. This is done for ease of use and potential processiung issues later.<br>
 - At the end of processing, you should now have an [NSVF](https://github.com/facebookresearch/NSVF) style formatted dataset to train onto the implementation.<br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XutC0lIkWqg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+https://user-images.githubusercontent.com/6027881/178885918-31c0eb2b-beb9-401c-ad6f-58830835de33.mp4
+
+
 
 ## Acknowledgments
 [AI葵, kwea123](https://github.com/kwea123) for his amazing work in the instant NeRF field.<br>
