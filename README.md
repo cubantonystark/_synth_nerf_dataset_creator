@@ -45,6 +45,7 @@ https://user-images.githubusercontent.com/6027881/178971425-6d593d58-52ae-46c7-b
 - Added randomization to test and validation sets.
 - Removed redundant code.
 - Added function to rezise images if they aren't 800 x 800 only.
+- Added functions to exit gracefully on the dataset script.
 
 ### :hammer: To Do
 
